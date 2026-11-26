@@ -43,4 +43,8 @@ Ejecutad los notebooks **en este orden** (cada uno genera un CSV en `data/proces
 
 ## Resultados principales
 
-*(Pendiente: se completará al final del proyecto.)*
+- **Limpieza:** 9742 películas. Se extrajo el año del título en una columna `year`; 13 películas no tienen año reconocible (una de ellas con un rango de años, *Death Note (2006–2007)*).
+- **Merge:** al unir valoraciones y etiquetas con las películas no se pierde ni se duplica ninguna fila. Hay 18 películas sin ninguna valoración.
+- **Segmentación:** los usuarios con menos de 100 valoraciones dan de media notas algo más altas (3,71) que los que valoran mucho (3,58).
+- **Preguntas:** hay 279 películas de los años 50 y 306 que son a la vez Sci-Fi y Adventure. La tag más repetida, *In Netflix queue*, no describe la película: es una nota personal del usuario.
+- **TMDB y Gemini:** se obtuvieron la sinopsis y la web oficial de 10 películas (6 no tienen web oficial) y Gemini generó un resumen en español de las 10.
